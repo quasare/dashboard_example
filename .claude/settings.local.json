@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(./setup_dashboard.sh:*)",
+      "Bash(tree:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(docker compose:*)",
+      "Bash(lsof:*)",
+      "Bash(docker system:*)",
+      "Bash(../setup_backend_core.sh)",
+      "Bash(../../setup_backend_core.sh)",
+      "Bash(npm install)",
+      "Bash(npm run prisma:generate:*)",
+      "Bash(npm run prisma:push:*)",
+      "Bash(cat:*)",
+      "Bash(npm run prisma:seed:*)",
+      "Bash(npm run start:dev:*)",
+      "Bash(curl:*)",
+      "Bash(../setup_api_development.sh)",
+      "Bash(../../setup_api_development.sh)",
+      "Bash(../../setup_frontend.sh)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "Bash(bash)",
+      "Bash(./step6-complete-dashboard.sh:*)",
+      "Bash(./step7-production-deployment.sh:*)",
+      "Bash(npm run build:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

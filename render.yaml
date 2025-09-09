@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: dashboard-frontend
+    runtime: docker
+    dockerfilePath: ./dashboard-project/frontend/Dockerfile.render
+    dockerContext: ./dashboard-project/frontend
+    plan: starter
+    region: oregon
+    branch: main
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    scaling:
+      minInstances: 1
+      maxInstances: 3
